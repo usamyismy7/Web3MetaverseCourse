@@ -1,0 +1,1 @@
+To avoid the Billion Dollar Mistake, in the tsconfig.json set strictNullChecks to true it will raise an error that you have not made a guarantee that the variable exists before trying to use it.
