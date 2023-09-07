@@ -70,6 +70,8 @@ console.log(colorIndex1); // 1
 // console.log(colorIndex2); // error
 console.log(colorIndex3); // 2
 
+// difference between enum and const enum d:\Online_Work\github-repos\Web3MetaverseCourse\Class08\concepts.ts
+
 // arrays
 let array1: number[] = [1, 2, 3];
 array1.push(4);
