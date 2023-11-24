@@ -1,0 +1,37 @@
+Q. what are modules, types of modules, how to initialize them?
+
+A. 
+Definition:
+modules are self-contained piece of code that can be called into another piece of code. they help to organise code and make it easier to reuse, small chunks of code, which makes it easier to understand the code and test it.
+
+Types of modules:
+In TypeScript, there are two types of modules:
+ES6 modules: These are the standard modules that are defined in the ECMAScript 6 specification. They are the most commonly used type of modules in TypeScript.
+CommonJS modules: These are older modules that are still supported by TypeScript. They are typically used in Node.js applications.
+
+Initialize:
+ES6 modules:
+
+myModule.ts
+export function add(x: number, y: number) {
+    return x + y;
+}
+
+App.ts
+import { add } from './myModule';
+const result = add(3, 6);
+console.log(result);
+
+CommonJS modules:
+
+myModule.ts
+modules.export {
+    add: function ( x: number, y: number) {
+        return x + y;
+    }
+}
+
+App.ts
+const myModule = require('./myModule');
+const result = myModule.add(10,20);
+console.log(result);
