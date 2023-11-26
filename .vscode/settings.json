@@ -1,4 +1,6 @@
 {
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true
 }
