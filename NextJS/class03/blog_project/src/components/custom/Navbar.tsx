@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-center bg-white min-h-[64px]">
+    <nav className="flex items-center justify-center bg-white min-h-[64px]">
       <div className="grid w-4/5 h-full grid-cols-[10%_80%_10%] items-center">
         {/* Logo */}
         <div>
@@ -23,6 +23,6 @@ export default function Navbar() {
           </Avatar>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
