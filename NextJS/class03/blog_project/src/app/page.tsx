@@ -1,7 +1,7 @@
 import Hero from "@/components/custom/Hero";
 import Blog from "@/components/custom/Blog";
 import Footer from "@/components/custom/Footer";
-// import Book from "@/components/Book";
+// import Book from "@/components/custom/Book";
 
 export default async function Home() {
   //   const res = await fetch("https://simple-books-api.glitch.me/books/", {
