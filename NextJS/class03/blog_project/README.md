@@ -7,7 +7,9 @@ This is a [Next.js](https://nextjs.org/) project
 typescript, nextJS, tailwindCSS, lucide React, radixUI
 components imported from ui.shadcn.com
 
-## Screenshots (photos & videos)
+## Screenshots
+
+![Alt text](image.png)
 
 ## Getting Started
 
