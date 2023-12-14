@@ -1,0 +1,40 @@
+###
+# Hello World
+
+GET http://localhost:3000/assets/hello.txt
+
+POST http://localhost:3000/api/echo
+Content-Type: application/json;
+{
+  "message": "What you give is what you get 🌍"
+}
+
+# todos GET All
+GET http://localhost:3Ø00/api/todos
+
+# todos POST Create
+POST http://localhost:3000/api/todos
+Content-Type: application/json;
+{
+"name": "Added by fetch"
+}
+
+# todos GET Item
+Send Request
+GET http://localhost:3Ø00/api/todos/:id
+
+# todos GET Item
+# GET http://localhost:3Ø00/api/todos/:id
+GET http://localhost:3Ø00/api/todos/df496abc-ac7f-48f1-93af-d737021fef26
+
+# todos PUT Item
+# PUT http://localhost:3ØOØ/api/todos/:id
+PUT http://localhost:3ØOØ/api/todos/df496abc-ac7f-48f1-93af-d737021fef26
+Content-Type: application/json
+{
+"name": "Updated by fetch"
+}
+
+# todos DELETE Item
+# DELETE http://localhost:3Ø00/api/todos/:id
+DELETE http://localhost:3Ø00/api/todos/df496abc-ac7f-48f1-93af-d737021fef26
