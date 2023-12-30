@@ -1,0 +1,1 @@
+in class 07, we created images components in contentful then integrated in code class06/step09/contentful/[nextjs project]
