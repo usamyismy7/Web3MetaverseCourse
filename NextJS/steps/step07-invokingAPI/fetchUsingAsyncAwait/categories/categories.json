@@ -1,6 +1,22 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "publisher": "test",
-  "description": "test"
+  "action": {
+    "name": "Action",
+    "description": "Movies that feature intense physical activity, such as fights, chases, explosions, etc."
+  },
+  "adventure": {
+    "name": "Adventure",
+    "description": "Movies that involve exploration, discovery, or travel to exotic locations."
+  },
+  "comedy": {
+    "name": "Comedy",
+    "description": "Movies that are intended to make the audience laugh, often by using humor, satire, or parody."
+  },
+  "drama": {
+    "name": "Drama",
+    "description": "Movies that focus on realistic characters, emotions, and situations, often dealing with serious themes or conflicts."
+  },
+  "fantasy": {
+    "name": "Fantasy",
+    "description": "Movies that feature elements of magic, mythology, or supernatural phenomena, often set in imaginary worlds."
+  }
 }
