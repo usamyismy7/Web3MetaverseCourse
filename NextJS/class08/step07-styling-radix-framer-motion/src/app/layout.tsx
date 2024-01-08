@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* <ThemeProvider attribute="class"> */}
+        {/* <Theme appearance="light" panelBackground="solid" radius="large" scaling="105%"></Theme> */}
         <Theme appearance="dark">
           {children}
           <ThemePanel />

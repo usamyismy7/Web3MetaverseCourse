@@ -1,0 +1,44 @@
+1. Sir ibtisam anwar was working on the project in which he had to integrate QR code scanner in the application. he used functional component of react, the camera was taking 2 minutes to read the QR code. when he used the class component of react, it solved his problem and now camera was reading QR code in few seconds.
+
+why behind 2 minutes of time when using functional components. functional components render the code to class component than execute. if class component is utilized directly, it saves time of request send and receive between functional component and class component.
+
+2. class components are called stateful component because state is injected in classes. functional components are called stateless component because state is not there but it can be injected from classes using hooks like react hooks.
+
+3. when using Async/Await in Client component. error comes that says Async/Await is only possible in Server Component. to use Async/Await in Client component, we need to use Async/Await and fetch API in useEffect() hook.
+
+4. what is useEffect?
+The useEffect hook in React is used to perform side effects in function components. Side effects are operations that happen outside of the immediate flow of your React components, such as:
+
+- Fetching data from an API
+- Setting up subscriptions (like websockets)
+- Interacting with the browser's localStorage
+- Manipulating the DOM directly (though this is rare in React as it prefers a declarative approach)
+- Logging to the console
+
+In your code, you're using useEffect to increment the count state and log a message to the console every time count changes. However, this is causing an infinite loop because changing count triggers the effect, which changes count again.
+
+The useEffect hook does not persist state across page reloads. When a page is reloaded, all JavaScript state is lost and re-initialized. To persist state across page reloads, you need to use some form of storage that survives page reloads, such as localStorage, sessionStorage, or cookies.
+
+5. is there a difference between counter.module.css or counter.css. is the module addition is just for developer to know that it is a module not just a normal css file. am i right? if not please tell m why?
+
+Yes, there is a difference between counter.module.css and counter.css in the context of a React application created with Create React App or Next.js.
+
+When you name a CSS file with .module.css, it enables CSS Modules, a CSS file in which all class names and animation names are scoped locally by default. This means that you can use the same CSS class name in different files without worrying about naming clashes.
+
+Here's an example of how you'd use a CSS Module in a React component:
+
+import styles from './counter.module.css';
+
+`
+import styles from './counter.module.css';
+
+function Counter() {
+  return <div className={styles.counter}>Counter</div>;
+}
+`
+
+In this code, styles.counter refers to the counter class in the counter.module.css file. Even if you have a counter class in another CSS Module, it won't conflict with this one.
+
+On the other hand, if you name a CSS file with .css, it's just a regular CSS file. All class names and animation names in this file are global. If you use the same class name in different .css files, the last one to be loaded will override the others.
+
+So, the .module.css naming convention is not just for developers to know that it's a module. It changes how the CSS is processed and used in your React application.
